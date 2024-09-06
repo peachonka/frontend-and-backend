@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html style="height: 100%; max-width: 100%;" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testpage number one</title>
+    <style>
+        p, h2, h2{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .footer-info, footer, .person-info, nav, main, .logo-wraper, header, .images{
+            display: flex;
+            flex-direction: row;
+        }
+        header, nav, main{
+            border-bottom: solid gray;
+        }
+        header, footer{
+            align-items: center;
+            padding: 10px;
+        }
+        .footer-info{
+            align-items: center;
+        }
+        .right-column {
+            max-width: 100%;
+            padding: 10px;
+        }
+        figure{
+            margin: 10px;
+        }
+        .images-wrapper::-webkit-scrollbar {
+            width: 0px;
+        }
+        figure>img{
+            height: 200px;
+        }
+      </style> 
+  </head>
+  <body style="margin: 0px; height: 100%; display: flex; flex-direction: column;">
+    <header style="  justify-content: space-between;  ">
+        <div class="logo-wraper" style="max-width: max-content; ">
+            <div class="logo" style="height: 30px; width: 30px; border: solid;border-radius: 5px; "></div>
+            <p>Logo</p>
+        </div>    
+        <div class="info" style="max-width: max-content; align-self: end; text-align: right;">
+            <p>Группа ЭФБО-01-23</p>
+            <p>Ревенко Анастасия Константиновна</p>
+        </div>    
+    </header>  
+    <nav>
+        <p>Главная</p>
+        <p>Первый семестр</p>
+        <p>Второй семестр</p>
+        <p>Услуги</p>
+        <p>Авторизация</p>
+    </nav>
+    <main style=" flex:1;">
+        <aside class="left-colummn" style="border-right: solid gray; min-width: max-content;">
+            <p>Навигация по странице</p>
+            <p>Фронтенд</p>
+            <p>Бэкенд</p>
+        </aside>
+        <div class="right-column" style="overflow: hidden;">
+            <h2>Разработка веб-приложений</h2>
+            <div class="images-wrapper" style="overflow: auto;">
+                <div class="images">
+                    <figure style=" border: solid gray;">
+                        <img src="placeholder.png" alt="placeholder">
+                        <figcaption>
+                            <p>Сайт-визитка</p>
+                        </figcaption>
+                    </figure>   
+                    <figure style="border: solid gray;">
+                        <img src="placeholder.png" alt="placeholder">
+                        <figcaption>
+                            <p>Корпоративный сайт</p>
+                        </figcaption>
+                    </figure> 
+                    <figure style=" border: solid gray;">
+                        <img src="placeholder.png" alt="placeholder">
+                        <figcaption>
+                            <p>Интренет-магазин</p>
+                        </figcaption>
+                    </figure> 
+                </div>
+            </div>    
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
+                sollicitudin volutpat diam, at malesuada ipsum elementum et. Phasellus feugiat convallis nisl, quis 
+                semper augue mollis in. In ac elit accumsan, viverra dolor porta, ornare purus. Aenean eleifend urna ligula, vitae bibendum 
+                tellus dapibus sit amet. Cras pharetra est sit amet nulla efficitur pulvinar. Maecenas et felis leo. Nunc turpis est, sodales a 
+                libero eu, tincidunt porta neque. Fusce ut dui vel urna rhoncus consectetur sit amet sed ante. Integer vitae egestas mi, vel 
+                commodo sapien. Vestibulum auctor, elit a elementum tempus, nisl quam aliquet orci, vel pretium ante diam ac tellus. 
+                Aenean felis tellus, luctus placerat viverra quis, cursus ac lectus. Nunc feugiat augue et lacinia aliquam.</p>
+                <p>Praesent justo augue, tempor non mi ac, ullamcorper blandit erat. Nam condimentum enim nunc, at sodales sapien ornare convallis. 
+                Nam rutrum feugiat diam a porttitor.</p>
+            </div>    
+        </div>        
+    </main>
+    <footer style="position: relative;   justify-content: center; ">
+        <div class="footer-info">
+            <img src="c-icon.png" alt="с" style="height: 15px; width: 15px;">
+            <p>Ревенко Анастасия Константиновна, 2024</p>
+        </div>
+        <div class="icons" style="position: absolute; right: 10px;">
+            <img src="whatsapp.png" alt="whatsapp-icon" style="height: 30px;">
+            <img src="vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
+        </div>  
+    </footer>          
+  </body> 
+</html>

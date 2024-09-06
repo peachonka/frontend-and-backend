@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testpage number one</title>
+    <style>
+        p, h2, h3{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .footer-info, footer, .person-info, nav, main, .logo-wraper, header{
+            display: flex;
+            flex-direction: row;
+        }
+        header, nav, main{
+            border-bottom: solid gray;
+        }
+        header, footer{
+            align-items: center;
+            padding: 10px;
+        }
+        .footer-info{
+            align-items: center;
+        }
+        .right-column{
+            padding: 10px;
+        }
+      </style>
+  </head>
+  <body style="margin: 0px; height: 100%; display: flex; flex-direction: column;">
+    <header style="  justify-content: space-between;  ">
+        <div class="logo-wraper" style="max-width: max-content; ">
+            <div class="logo" style="height: 30px; width: 30px; border: solid;border-radius: 5px; "></div>
+            <p>Logo</p>
+        </div>    
+        <div class="info" style="max-width: max-content; align-self: end; text-align: right;">
+            <p>Группа ЭФБО-01-23</p>
+            <p>Ревенко Анастасия Константиновна</p>
+        </div>    
+    </header>  
+    <nav>
+        <p>Главная</p>
+        <p>Первый семестр</p>
+        <p>Второй семестр</p>
+        <p>Услуги</p>
+        <p>Авторизация</p>
+    </nav>
+    <main style=" flex:1;">
+        <aside class="left-colummn" style="border-right: solid gray; min-width: max-content;">
+            <p>Навигация по странице</p>
+            <p>Фронтенд</p>
+            <p>Бэкенд</p>
+        </aside>
+        <div class="right-column">
+            <h2>Добро пожаловать на мой сайт</h2>
+            <div class="person-info" style=" justify-content: space-between; width: 80%;">
+                <p>Меня зовут Ревенко Анастасия Константиновна и я начинающий
+                специалист по веб-разработке.</p>
+                <img src="user.png" alt="Фото пользователя" style="height: 90px; width: 90px;">
+                </div>
+            <section>
+                <h3>Фронтенд</h3>
+                <p>Фронтенд (или клиентская часть) - это то, что видит пользователь. Он
+                включает в себя все визуальные элементы веб-сайта или приложения: кнопки,
+                формы, изображения и текст. Фронтенд разработчики используют языки
+                разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать
+                интерактивные и привлекательные интерфейсы. Основная задача фронтенда
+                - обеспечить удобство использования и эстетическую привлекательность.</p>
+            </section>
+            <section>
+                <h3>Бэкенд</h3>
+                <p>Бэкенд (или серверная часть) - это "за кулисами" веб-приложения. Он
+                отвечает за обработку данных, управление пользователями и взаимодействие
+                с базами данных. Бэкенд разработчики используют языки программирования,
+                такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для
+                создания логики приложения. Основная задача бэкенда - обеспечить
+                стабильную работу приложения и безопасность данных.</p>
+            </section>
+        </div>        
+    </main>
+    <footer style="position: relative;   justify-content: center; ">
+        <div class="footer-info">
+            <img src="c-icon.png" alt="с" style="height: 15px; width: 15px;">
+            <p>Ревенко Анастасия Константиновна, 2024</p>
+        </div>
+        <div class="icons" style="position: absolute; right: 10px;">
+            <img src="whatsapp.png" alt="whatsapp-icon" style="height: 30px;">
+            <img src="vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
+        </div>    
+    </footer>          
+  </body>  
+</html>
