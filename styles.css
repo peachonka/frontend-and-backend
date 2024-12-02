@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: Jost, sans-serif;
+}
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    min-height: max-content;
+}
+p, h2, h3, a, table, label{
+    margin: 10px;
+    
+}
+h2, h1{
+    font-size: 1.75em;
+    font-weight: 500;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: normal;
+    color: purple;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+aside p, aside a{
+    padding: 6px 18px;
+    margin: 2px;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+aside {
+    border: solid purple 1px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex; flex-direction: column; min-width: max-content;
+    padding-top: 5px;
+}
+.logo-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 30px; width: 30px; border: solid purple;border-radius: 5px;
+    margin: 10px; 
+}
+.footer-info, .logo-wraper{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    background-image: linear-gradient(to right, rgb(253, 232, 255), rgb(255, 222, 222));
+    border-radius: 0px 0px 10px 10px;
+}
+header p {
+    font-weight: 500;
+    font-size: 2em;
+}
+/* header, nav, main{
+    border-bottom: solid gray;
+} */
+header, footer{
+    align-items: center;
+    padding: 10px;
+}
+.footer-info{
+    align-items: center;
+}
+.right-column{
+    padding: 10px;
+    max-width: 100%;
+}
+section{
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+}
+.table-wrapper{
+    width: 100%;
+}
+iframe{
+    padding: 10px;
+    border:none;
+    width: 100%;
+}
+
+@media (max-width: 400px) {
+    iframe{
+        max-width: 100%; 
+        aspect-ratio: 5/3; 
+        max-height: 100%; 
+        width: inherit;
+    }
+}
+
+input[type="checkbox"] {
+    accent-color:  purple;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+th{
+    font-weight: 500;
+} 
+td, th{
+    border-right: solid purple 1px;
+    border-bottom: solid purple 1px;
+    padding: 5px;
+    border-collapse: collapse;
+}
+.last-tr>td{
+    border-bottom: none;
+}
+table{
+    border-spacing: 0;
+    border: solid purple 1px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: max-content;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ footer, header, .person-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.person-info p{
+    max-width: 500px;
+}
+/* nav > *{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+nav div:hover{
+    color: purple;
+    cursor: pointer;
+}
+nav div:active{
+    background-color: rgb(255, 237, 255);
+    color:black;
+} */
+header, footer{
+    align-items: center;
+    padding: 10px;
+}
+.footer-info{
+    align-items: center;
+}
+.right-column{
+    padding: 10px;
+}
+
+section, article{
+    background-color: rgb(255, 237, 255);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* section{
+    overflow: auto;
+} */
+
+img{
+    aspect-ratio: 1/1;
+    max-width: 220px;
+    min-width: 120px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    max-width: inherit;
+}
+.images-wrapper{
+    overflow: auto;
+}
+figure{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+figure:hover{
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+figure>img{
+    height: 200px;
+}
+figcaption{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    white-space: nowrap;
+}
+button{
+    margin: 10px;
+    align-self: center;
+    width: 100%;
+    background: none;
+    border-radius: 20px;
+    border: solid purple 1px;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 237, 255);
+    border-color: white;
+}
+.modal-content{
+    max-width: min-content;
+    max-height: max-content;
+    border: solid gray;
+    padding: 10px;
+    margin: 15% auto; 
+    background-color: white;
+    border: solid purple 1px;
+    border-radius: 30px;
+}
+input, select, textarea{
+    border-radius: 20px;
+    outline-color:  purple;
+    border: solid rgb(255, 185, 227) 1px;
+    padding: 5px 10px;
+    width: 100%;
+}
+#modal{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.252);
+    top: 0;
+    position: fixed;
+    display: none;
+    overflow: hidden;
+    z-index: 10;
+}
+label {
+display: flex;
+flex-direction: row;
+align-items: center;
+width: inherit;
+}
+input, select, textarea {
+margin-left: 10px;
+height: min-content;
+}
+
+.icon{
+    aspect-ratio: 1/1;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+}

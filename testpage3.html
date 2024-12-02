@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testpage number one</title>
+    <link href="c-icon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  </head>
+  <body style="margin: 0px; height: 100%; display: flex; flex-direction: column;">
+    <header style="justify-content: space-between;" class="row p-4">
+        <div class="logo-wraper" style="max-width: max-content; ">
+            <div class="logo" style="height: 30px; width: 30px; border: solid;border-radius: 5px; "></div>
+            <p>Logo</p>
+        </div>    
+        <div class="info" style="max-width: max-content; align-self: end; text-align: right;">
+            <p class="fs-3">Группа ЭФБО-01-23</p>
+            <p class="fs-3 fw-bold">Ревенко Анастасия Константиновна</p>
+        </div>    
+    </header> 
+    <nav class="navbar navbar-expand-lg m-4 p-2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage1.html">Главная</a>
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage3.html">Первый семестр</a>
+            <a class="nav-item nav-link m-4">Второй семестр</a>
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage2.html">Услуги</a>
+            <div class="nav-item dropdown m-4">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Авторизация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main style=" flex:1;" class="p-4 pt-0">
+        <aside class="left-colummn">
+            <h2 class="fs-3 fw-bold">Навигация по странице</h2>
+            <a href="#lections" class="btn btn-outline-secondary">Лекции</a>
+            <a href="#pactice" class="btn btn-outline-secondary">Практики</a>
+            <a href="#adress" class="btn btn-outline-secondary">Адрес ВУЗа</a>
+            <a href="#work-plan" class="btn btn-outline-secondary">Рабочая программа</a>
+        </aside>
+        <div class="right-column">
+            <h2>Первый семестр</h2>
+            <section class="lections" id="lections" style=" justify-content: space-between; overflow: auto; max-width: 100%;">
+                <h3>Лекции</h3>
+                <div class="table-wrapper" style="width: 100%;">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="fw-bold">
+                          <th scope="col">Номер</th>
+                          <th scope="col">Тема</th>
+                          <th scope="col" style="border-right:none;">Посещение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Основы языка HTML</td><td style="border-right:none;"><input type="checkbox" checked></td></tr>
+                        <tr><td>2</td><td>Углубленное изучение HTML</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>3</td><td>Основы работы с CSS</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>4</td><td>Адаптивная верстка. Flexbox и Grid Layout</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>5</td><td>Bootstrap - работа с фреймворком</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>6</td><td>Основы языка JavaScript</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>7</td><td>Работа с DOM и событиями в JavaScript</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr class="last-tr"><td>8</td><td>Введение в GitHub и GitHub Pages</td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                    </tbody>    
+                </table>
+                </div>
+            </section>
+            <section class="practice" id="practice" style=" justify-content: space-between; overflow: auto;">
+                <h3>Практики</h3>
+                <div class="table-wrapper">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="fw-bold">
+                          <th scope="col">Номер</th>
+                          <th scope="col">Тема</th>
+                          <th scope="col">Посещение</th>
+                          <th scope="col" style="border-right:none;">Выполнение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Основы языка HTML</td><td><input type="checkbox" checked></td><td style="border-right:none;"><input type="checkbox" checked></td></tr>
+                        <tr><td>2</td><td>Формы и кнопки в HTML</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>3</td><td>Таблицы и интерактивные элементы HTML</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>4</td><td>Основы работы с CSS</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>5</td><td>Работа с классами в CSS</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>6</td><td>Работа с сетками и разметкой в HTML</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>7</td><td>Адаптивная вёрстка</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>8</td><td>Bootstrap</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>9</td><td>Основы языка JavaScript</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>10</td><td>Базовые задачи на JS</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>11</td><td>DOM-структура приложений и работа с объектами в языке JS</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>12</td><td>Встраивание скриптов</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>13</td><td>Отладка сценариев</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>14</td><td>Анимации и работа с ними</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr><td>15</td><td>Github</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                        <tr class="last-tr"><td>16</td><td>Защита проекта</td><td><input type="checkbox"></td><td style="border-right:none;"><input type="checkbox"></td></tr>
+                    </tbody>    
+                </table> 
+            </div>   
+            </section>
+            <section id="adress">
+                <h3>Занятия проходят по адерсу</h3>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A16e2a2c0f380171f528c0e0f58c9fc0f1ed0ba3873c2ee7c00af76b4793eaa38&amp;source=constructor" width="500" height="400" style="margin: 10px;"></iframe>
+            </section>
+            <section id="work-plan">
+                <h3>Рабочая программа</h3>
+                <div style="width: 80%;height: 400px; border: solid black; margin: 10px;">
+                    <embed src="Алгоритмы.pdf" type="application/pdf" width="100%" height="400">
+                </div>
+            </section>
+        </div>        
+    </main>
+    <footer style="position: relative;   justify-content: center; ">
+        <div class="footer-info">
+            <img class="icon" src="c-icon.png" alt="с" style="height: 15px; width: 15px;">
+            <p>Ревенко Анастасия Константиновна, 2024</p>
+        </div>
+        <div class="icons">
+            <img class="icon" src="whatsapp.png" alt="whatsapp-icon" style="height: 30px; width: 40px;">
+            <img class="icon" src="vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
+        </div>  
+    </footer>      
+  </body>  
+</html>

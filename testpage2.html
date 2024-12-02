@@ -4,110 +4,193 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>testpage number one</title>
-    <style>
-        p, h2, h2{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 10px;
-        }
-        .footer-info, footer, .person-info, nav, main, .logo-wraper, header, .images{
-            display: flex;
-            flex-direction: row;
-        }
-        header, nav, main{
-            border-bottom: solid gray;
-        }
-        header, footer{
-            align-items: center;
-            padding: 10px;
-        }
-        .footer-info{
-            align-items: center;
-        }
-        .right-column {
-            max-width: 100%;
-            padding: 10px;
-        }
-        figure{
-            margin: 10px;
-        }
-        .images-wrapper::-webkit-scrollbar {
-            width: 0px;
-        }
-        figure>img{
-            height: 200px;
-        }
-      </style> 
-  </head>
+    <link href="c-icon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  </head>
   <body style="margin: 0px; height: 100%; display: flex; flex-direction: column;">
-    <header style="  justify-content: space-between;  ">
+    <header style="justify-content: space-between;" class="row p-4">
         <div class="logo-wraper" style="max-width: max-content; ">
             <div class="logo" style="height: 30px; width: 30px; border: solid;border-radius: 5px; "></div>
             <p>Logo</p>
         </div>    
         <div class="info" style="max-width: max-content; align-self: end; text-align: right;">
-            <p>Группа ЭФБО-01-23</p>
-            <p>Ревенко Анастасия Константиновна</p>
+            <p class="fs-3">Группа ЭФБО-01-23</p>
+            <p class="fs-3 fw-bold">Ревенко Анастасия Константиновна</p>
         </div>    
     </header>  
-    <nav>
-        <p>Главная</p>
-        <p>Первый семестр</p>
-        <p>Второй семестр</p>
-        <p>Услуги</p>
-        <p>Авторизация</p>
+    <nav class="navbar navbar-expand-lg m-4 p-2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage1.html">Главная</a>
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage3.html">Первый семестр</a>
+            <a class="nav-item nav-link m-4">Второй семестр</a>
+            <a class="nav-item nav-link active m-4" href="C:\Users\User\testfolder\testpage2.html">Услуги</a>
+            <div class="nav-item dropdown m-4">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Авторизация</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main style=" flex:1;">
-        <aside class="left-colummn" style="border-right: solid gray; min-width: max-content;">
-            <p>Навигация по странице</p>
-            <p>Фронтенд</p>
-            <p>Бэкенд</p>
-        </aside>
+    <main style=" flex:1;" class="p-4 pt-0">
+        <!-- <aside class="left-colummn container-fluid g-2">
+            <h2 class="fs-3 fw-bold">Навигация по странице</h2>
+            <p class="btn btn-outline-secondary">Фронтенд</p>
+            <p class="btn btn-outline-secondary">Бэкенд</p>
+        </aside> -->
         <div class="right-column" style="overflow: hidden;">
             <h2>Разработка веб-приложений</h2>
-            <div class="images-wrapper" style="overflow: auto;">
-                <div class="images">
-                    <figure style=" border: solid gray;">
-                        <img src="placeholder.png" alt="placeholder">
+            <div class="images-wrapper overflow-auto">
+                <div class="images p-2" style="display: flex; flex-direction: row; min-width: max-content;">
+                    <figure class="card m-2 p-1" style="width: 18rem;">
+                        <img class="card-img-top" src="placeholder.png" alt="placeholder">
                         <figcaption>
-                            <p>Сайт-визитка</p>
+                            <h5 class="card-title">Сайт-визитка</h5>
+                            <button class="openmodal btn btn-primary m-2" name="visit" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать</button>
                         </figcaption>
                     </figure>   
-                    <figure style="border: solid gray;">
-                        <img src="placeholder.png" alt="placeholder">
+                    <figure class="card m-2 p-1" style="width: 18rem;">
+                        <img class="card-img-top" src="placeholder.png" alt="placeholder">
                         <figcaption>
-                            <p>Корпоративный сайт</p>
+                            <h5 class="card-title">Корпоративный сайт</h5>
+                            <button class="openmodal btn btn-primary m-2" name="visit" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать</button>
                         </figcaption>
-                    </figure> 
-                    <figure style=" border: solid gray;">
-                        <img src="placeholder.png" alt="placeholder">
+                    </figure>
+                    <figure class="card m-2 p-1" style="width: 18rem;">
+                        <img class="card-img-top" src="placeholder.png" alt="placeholder">
                         <figcaption>
-                            <p>Интренет-магазин</p>
+                            <h5 class="card-title">Интернет-магазин</h5>
+                            <button class="openmodal btn btn-primary m-2" name="visit" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать</button>
                         </figcaption>
-                    </figure> 
+                    </figure>
                 </div>
             </div>    
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam 
-                sollicitudin volutpat diam, at malesuada ipsum elementum et. Phasellus feugiat convallis nisl, quis 
-                semper augue mollis in. In ac elit accumsan, viverra dolor porta, ornare purus. Aenean eleifend urna ligula, vitae bibendum 
-                tellus dapibus sit amet. Cras pharetra est sit amet nulla efficitur pulvinar. Maecenas et felis leo. Nunc turpis est, sodales a 
-                libero eu, tincidunt porta neque. Fusce ut dui vel urna rhoncus consectetur sit amet sed ante. Integer vitae egestas mi, vel 
-                commodo sapien. Vestibulum auctor, elit a elementum tempus, nisl quam aliquet orci, vel pretium ante diam ac tellus. 
-                Aenean felis tellus, luctus placerat viverra quis, cursus ac lectus. Nunc feugiat augue et lacinia aliquam.</p>
-                <p>Praesent justo augue, tempor non mi ac, ullamcorper blandit erat. Nam condimentum enim nunc, at sodales sapien ornare convallis. 
-                Nam rutrum feugiat diam a porttitor.</p>
-            </div>    
+            <article>
+                <p>На улице жара стояла страшная, к тому же духота, толкотня, всюду известка, леса, кирпич, пыль и та особенная летняя вонь, 
+                    столь известная каждому петербуржцу, не имеющему возможности нанять дачу, — всё это разом неприятно потрясло и без того уже 
+                    расстроенные нервы юноши. Нестерпимая же вонь из распивочных, которых в этой части города особенное множество, и пьяные, поминутно 
+                    попадавшиеся, несмотря на буднее время, довершили отвратительный и грустный колорит картины. Чувство глубочайшего омерзения мелькнуло
+                     на миг в тонких чертах молодого человека. 
+                    Кстати, он был замечательно хорош собою, с прекрасными темными глазами, темно-рус, ростом выше среднего, тонок и строен.</p>
+                <p>Но скоро он впал как бы в глубокую задумчивость, даже, вернее сказать, как бы в какое-то забытье, и пошел, уже не замечая окружающего, 
+                    да и не желая его замечать. Изредка только бормотал он что-то про себя, от своей привычки к монологам, в которой он сейчас сам себе признался. 
+                    В эту же минуту он и сам сознавал, что мысли его порою мешаются и что он очень слаб: второй день как уж он почти совсем ничего не ел.</p>
+                </article>    
         </div>        
     </main>
     <footer style="position: relative;   justify-content: center; ">
         <div class="footer-info">
-            <img src="c-icon.png" alt="с" style="height: 15px; width: 15px;">
+            <img class="icon" src="c-icon.png" alt="с" style="height: 15px; width: 15px;">
             <p>Ревенко Анастасия Константиновна, 2024</p>
         </div>
-        <div class="icons" style="position: absolute; right: 10px;">
-            <img src="whatsapp.png" alt="whatsapp-icon" style="height: 30px;">
-            <img src="vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
+        <div class="icons">
+            <img class="icon" src="whatsapp.png" alt="whatsapp-icon" style="height: 30px; width: 40px;">
+            <img class="icon" src="vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
         </div>  
-    </footer>          
+    </footer> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-2">
+                <div class="modal-header">
+                    <h2 style="min-width: max-content;" class="modal-title fs-5">Разработка веб-приложения</h2>
+                </div>
+                <p class="m-2">Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнение деталей.</p>
+                <div class="modal-body">
+                    <form id="contactForm" class="d-flex flex-column">
+                        <label id="item">
+                            Как вас зовут
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Иванов Иван Иванович">
+                        </label> 
+                        <label>
+                            Ваш e-mail
+                            <input type="email" class="form-control" id="email" name="email" placeholder="test@email">
+                        </label> <label>
+                            Телефон
+                            <input type="tel" class="form-control" id="tel" name="telephone" placeholder="+7-999-999-99-99">
+                        </label> <label>
+                            Страна
+                            <select id="country" class="form-select" name="country">
+                                <option value="Россия">Россия</option>
+                                <option value="Австралия">Австралия</option>
+                                <option value="Подольск">Подольск</option>
+                                <option value="Беларусь">Беларусь</option>
+                                <option value="Другое">Другое</option>
+                            </select>
+                        </label> <label>
+                            Дата
+                            <input type="date" class="form-control" id="date" name="date">
+                        </label> <label>
+                            Комментарий
+                            <textarea id="text" class="form-control" name="commentary"></textarea>
+                        </label> 
+                        <label>
+                            <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox">
+                            <span style="font-size: small;" class="form-check-label">Согласен на обработку моих персональных данных</span>
+                        </label>
+                        <label><button id="close" class="btn btn-primary">Отправить</button></label>
+                    </form>    
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <script>
+        // Получаем элементы модального окна и кнопок
+        const modal = document.getElementById("modal");
+        const btns = document.getElementsByClassName("openmodal");
+        const span = document.getElementById("close");
+        const successMessage = document.getElementById("successMessage");
+        var service;
+    
+        // Открываем модальное окно при нажатии на кнопку
+        Array.from(btns)
+            .forEach((btn) => {
+            btn.onclick = function() {
+                // modal.style.display = "block";
+                // document.getElementsByTagName("html")[0].style.overflow = "hidden";
+                service = this.name;
+            }
+        })
+        // Закрываем модальное окно при нажатии на "X"
+        // span.onclick = function() {
+        //     // modal.style.display = "none";
+        //     // document.getElementsByTagName("html")[0].style.overflow = "auto";
+        // }
+        // Закрываем модальное окно при клике вне его области
+        // window.onclick = function(event) {
+        // if (event.target === modal) {
+        // // modal.style.display = "none";
+        // }
+        // }
+        function HandleData(event){
+            event.preventDefault();
+            const form = document.getElementById("contactForm");
+            const elements  = form.elements;
+            var correct = true;
+            let srt_serv = "";
+            if (service == "visit") srt_serv = "сайта-визитки";
+            else if (service == "corp") srt_serv = "корпоративного сайта";
+            else if (service == "shop") srt_serv = "интернет-магазина";
+            //console.log(Array.from(elements))
+            Array.from(elements)
+            .forEach((element) => {
+                const { name, value } = element
+                if (value == "" && name != "commentary" && name != "") correct = false;
+                //console.log({name, value});
+            })
+            if (!document.getElementById("checkbox").checked) correct = false;
+            location.reload();
+            if (correct) alert(`Форма заказа ${srt_serv} успешно отправлена`);
+            else alert("Ошибка в форме");
+        }
+    
+        span.addEventListener('click', HandleData);
+      </script>            
   </body> 
 </html>
