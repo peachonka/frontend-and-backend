@@ -88,6 +88,14 @@ iframe{
     width: 100%;
 }
 
+.photo{
+    transition: transform 0.5s ease;
+}
+
+.photo:hover{
+    transform: rotate(360deg);
+}
+
 @media (max-width: 400px) {
     iframe{
         max-width: 100%; 
